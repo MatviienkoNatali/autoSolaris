@@ -7,14 +7,14 @@ $(document).ready(function(){
 		modelSpecsHolder,
 		modelPriceHolder,
 		modelPriceUSDHolder;
-	
+
 	modelSpecsHolder = $('#modelSpecs');
 	modelPriceHolder = $('#modelPrice');
 	modelPriceUSDHolder = $('#modelPriceUSD');
-	
+
 	modelSpecs = '';
 	modelPrice = 0;
-	
+
 
 	    // Получаем курс валют
     var currencyUrl = 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=3'
@@ -67,7 +67,7 @@ $(document).ready(function(){
 		compileSpecs();
 		calculatePrice();
 		calculateUSD();
-		
+
 	});
 
 
@@ -91,5 +91,5 @@ $(document).ready(function(){
 
 
 
-	
+
 });
