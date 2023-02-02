@@ -1,163 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
-  <title>HealthyFOOD</title>
+	<meta charset="UTF-8">
+	<title>auto Solaris</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <header class="header">
-  <div class="container nav">
-    <div class="logo">
-      <a href="home.html">
-        <img src="./img/logo.png" alt="logo">
-      </a>      
-    </div>
-    <div>
-      <ul class="menu">
-        <li class="menu__item"><a href="home.html">Головна</a></li>
-        <li class="menu__item"><a href="about-us.html">Про нас</a></li>
-        <li class="menu__item"><a href="categories.html">Категорії</a></li>
-        <li class="menu__item"><a href="contact.html">Контакти</a></li>
-      </ul>
-      <nav class="header__nav">
-				<div id="burger" class="burger">
-					<span id="trigger" class="trigger">
-				</span>
+
+	<div id="imgHolder" class="imgHolder">
+
+		<img src="img/autoBlue.png" alt="auto">
+		<p class="fonText">SOLARIS</p>
+
+		<div class="model-summary">
+			<div class="model-name">Hundai Solaris</div>
+			<div class="model-precs" id="modelSpecs">1.6 - 6AT Comfort</div>
+			<div class="model-price" id="modelPrice"></div>
+			<div class="model-price" id="modelPriceUSD"></div>
+			<div class="button">Заказать</div>
+		</div>
+
+	</div>
+
+
+	<form id="autoForm" class="autoForm">
+		<h2>Настрой авто для себя</h2>
+		<div class="row">
+			<div class="col-4">
+				<h4>Двигатель</h4>
+				<div class="form-block">
+					<input type="radio" name="engine" id="engine1400" value="624900" checked>
+					<label for="engine1400">1.4 л  (100 л.с.)</label>
 				</div>
-				<!-- menu -->
-				<ul id="menu" class="burger-menu">
-					<li class="burger-menu__item"><a href="home.html">Головна</a></li>
-          <li class="burger-menu__item"><a href="about-us.html">Про нас</a></li>
-          <li class="burger-menu__item"><a href="categories.html">Категорії</a></li>
-          <li class="burger-menu__item"><a href="contact.html">Контакти</a></li>
-				</ul>
-				
-			</nav>
-    </div>
-  </div>
-</header>
-  
+				<div class="form-block">
+					<input type="radio" name="engine" id="engine1600" value="749900">
+					<label for="engine1600">1.6 л (123 л.с.)</label>
+				</div>
+			</div>
+			<div class="col-4">
+				<h4>Коробка передач</h4>
 
-  <section class="banner">
-    <div class="banner__container">
-      <span class="banner__sub-title">давай почнемо</span>
-      <h1 class="banner__title">ГОТУВАТИ</h1>
-      <span class="banner__sub-title banner__sub-title_left">Знайди свій унікальний рецепт</span>
-    </div>
-    <div class="arrow">
-      <a href="#about-block">
-        <img src="img/arrow.png" alt="arrow">
-      </a>      
-    </div>
-  </section>
-  <section id="about-block" class="about-block">
-    <h2 class="second-title">Даний проект це:</h2>
-    <div class="about-block__row">
-      <div class="about-block__text"> 
-        <p>
-          <p>
-            Підбір харчування при певних захворювань, з метою покращити своє здоров'я.
-          </p>
-          Як відомо, дієта  є одним з важливих методів лікування при багатьох захворюваннях, а саме при таких, як цукровий діабет, аліментарне ожиріння, з проблемами церця, тощо. 
-        </p>
-        <p>
-          При лікувальному харчуванні має значення не тільки правильний підбір продуктів, але і дотримання технології кулінарної обробки, температура споживаної хворим їжі, кратність і час прийому їжі.
-        </p>       
-      </div>
-      <div class="about-block__img">
-        <img src="img/about-block-img1.jpeg" alt="about-block-img">
-      </div>
-    </div>
-    <div class="about-block__row pb-70">
-      <div class="about-block__img">
-        <img src="img/about-block-img2.jpeg" alt="about-block-img">
-      </div>
-      <div class="about-block__text about-block__text_left"> 
-        <p>
-          Загострення багатьох захворювань пов'язані з різними порушеннями в харчуванні: порушення в дієті при цукровому діабеті приводять до різкого підвищення цукру в крові, до сухості в роті, посилення спраги, прогресує жирова інфільтрація печінки і підшлункової залози; хронічного панкреатиту після вживання жирної сметани, млинців, алкогольних напоїв, смажених страв; підвищення артеріального тиску у хворих на гіпертонічну хворобу, спостерігається при вживанні солоної їжі, яка призначається при цьому лікування мало ефективно.
-        </p>     
-      </div>      
-    </div>
-    <div class="container flex">
-      <a href="about-us.html" class="button ml-auto">ЧИТАТИ БІЛЬШЕ</a>
-    </div>    
-  </section>
+				<div class="form-block">
+					<input type="radio" name="transmission" id="transmission6MT" value="0" checked>
+					<label for="transmission6MT">Ручная, 6 ступеней (6 МТ)</label>
+				</div>
 
-  <footer class="footer">
-  <div class="footer__first">
-    <div class="container footer__navigation">
-      <div class="footer__list">
-        <span class="footer__title">
-          Навігація
-        </span>
-        <ul>
-          <li><a href="home.html">Головна</a></li>
-          <li><a href="about-us.html">Про нас</a></li>
-          <li><a href="categories.html">Категорії</a></li>
-          <li><a href="contact.html">Контакти</a></li>
-        </ul>
-      </div>
-      <div class="footer__list">
-        <span class="footer__title">
-          Категорії
-        </span>
-        <div class="footer__flex">
-          <ul>
-            <li><a href="menu-diabetes.html">Цукровий діабет</a></li>
-            <li><a href="menu-nirok.html">Захворювання нирок</a></li>
-            <li><a href="menu-gluten-free.html">Безглютенова дієта</a></li>
-          </ul>
-          <ul class="pl-md-4">
-            <li><a href="menu-peptic-ulcer.html">Виразка шлунку</a></li>
-            <li><a href="menu-low-calories.html">Низькокалорійна їжа</a></li>
-          </ul>
-        </div>        
-      </div>
-      <div class="footer__list">
-        <span class="footer__title">
-          Контакти
-        </span>
-        <ul>
-          <li>Email: <a href="#" target="_blank">healthyFood@gmail.com</a></li>
-          <li>Phone: <a href="tel:+38 095 11 22 333"> +38 095 11 22 333</a></li>
-          <li>Map: <a href="https://www.google.com/maps?ll=50.014791,36.228491&z=16&t=m&hl=ru&gl=UA&mapclient=embed&cid=7903483453481431633" target="_blank">м. Харкiв</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer__second">
-    <div class="container">
-      <div class="footer__wrap">
-        <p class="copyright">
-          &copy; Copyright Healthy Food 2021. 
-        </p>
-        <div class="footer__social">
-          <div class="footer__icon">
-            <a href="wait.html" target="_blank">
-              <img src="./img/icon/link-fb.png" alt="link-fb">
-            </a>            
-          </div>
-          <div class="footer__icon">
-            <a href="wait.html" target="_blank">
-              <img src="./img/icon/link-inst.png" alt="link-inst">
-            </a>            
-          </div>
-          <div class="footer__icon">
-            <a href="wait.html" target="_blank">
-              <img src="./img/icon/telegram.png" alt="telegram">
-            </a>            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>  
-</footer>
+				<div class="form-block">
+					<input type="radio" name="transmission" id="transmission6AT" value="125000">
+					<label for="transmission6AT">Автомат, 6 ступеней (6 АТ)</label>
+				</div>
+			</div>
+			<div class="col-4">
+				<h4>Пакет (дополнительные опции)</h4>
 
-<script src="js/main.js"></script>
+				<div class="form-block">
+					<input type="radio" name="package" id="packageActive" value="0" checked>
+					<label for="packageActive">Active</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="package" id="packageActivePlus" value="85000">
+					<label for="packageActivePlus">Active Plus (кондиционер)</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="package" id="packageComfort" value="130000">
+					<label for="packageComfort">Comfort (климатконтроль)</label>
+				</div>
+			</div>
+		</div>
+
+
+		<h4>Цвет</h4>
+		<div class="form-block">
+		<div id="colorSelector" class="colorSelector">
+			<div class="colorItem colorBlue" data-img-path="img/autoBlue.png"></div>
+			<div class="colorItem colorWhite" data-img-path="img/autoWhite.png"></div>
+			<div class="colorItem colorGray" data-img-path="img/autoGray.png"></div>
+			<div class="colorItem colorBlack" data-img-path="img/autoBlack.png"></div>
+			<div class="colorItem colorOrange" data-img-path="img/autoOrange.png"></div>
+		</div>
+		</div>
+	</form>
+
+
+
+
+
+
+	<script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
